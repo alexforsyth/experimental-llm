@@ -1,0 +1,23 @@
+# Enqueue policy: which models to target and which queries to skip.
+#
+# Used by `make enqueue` (query-enqueue). Every query under queries/ that is not
+# ignored is fanned out to each model below, one enqueued unit per (query, model).
+#
+# Each model references a provider defined in providers.yaml and may carry any
+# per-call options (max_tokens, temperature, ...) passed through to the executor.
+# Connection details (base_url, auth, region) live on the provider, not here.
+
+models:
+  - name: claude-opus-4-8
+    provider: anthropic
+    max_tokens: 1024
+    temperature: 1.0
+  - name: llama3.1:8b
+    provider: local
+    max_tokens: 1024
+
+# Skip queries whose path (relative to queries/) matches any of these globs.
+# `*` matches across `/`, so `finance/**` and `finance/*` both skip the category.
+ignore: []
+  # - "finance/**"
+  # - "real-estate/broker/car.*"

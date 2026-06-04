@@ -1,0 +1,28 @@
+# Provider registry: where/how to reach models. Shared source of truth read by
+# the enqueuer (to validate references) and the executor/workers (to resolve
+# connection details at run time).
+#
+# Each provider has a `type` (selects the executor's adapter; defaults to the
+# key), connection info (base_url / region), and a pluggable `auth` block.
+# `auth` only ever references a secret -- it never holds one.
+
+providers:
+  anthropic:
+    type: anthropic
+    base_url: https://api.anthropic.com
+    auth: {type: env, var: ANTHROPIC_API_KEY}
+
+  openai:
+    type: openai
+    base_url: https://api.openai.com/v1
+    auth: {type: env, var: OPENAI_API_KEY}
+
+  local:
+    type: openai                      # OpenAI-compatible (e.g. ollama, vLLM)
+    base_url: http://localhost:11434/v1
+    auth: {type: none}
+
+  bedrock:
+    type: bedrock
+    region: us-east-1
+    auth: {type: aws, profile: default}   # standard AWS credential chain

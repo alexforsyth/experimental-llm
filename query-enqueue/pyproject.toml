@@ -1,0 +1,28 @@
+[project]
+name = "query-enqueue"
+version = "0.1.0"
+description = "Enqueue constructed queries for the executor: filter by glob and fan out to target models."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+query-enqueue = "query_enqueue.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/query_enqueue"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

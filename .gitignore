@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Enqueued queries are transient queue payloads (eventually pushed to a real queue).
+enqueued_queries/
