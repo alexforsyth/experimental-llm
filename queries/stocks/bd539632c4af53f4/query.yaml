@@ -1,0 +1,9 @@
+query: What is the best healthcare stock to invest in?
+metadata:
+  id: bd539632c4af53f4
+  prefix: stocks
+  category: finance
+  template_query: What is the best {type} stock to invest in?
+  substitutions:
+    type: healthcare
+  created_at: '2026-06-04T20:48:02.959587+00:00'

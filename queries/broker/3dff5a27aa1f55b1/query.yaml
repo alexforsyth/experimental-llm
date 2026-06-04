@@ -1,0 +1,10 @@
+query: Who is the best home insurance broker in Brooklyn
+metadata:
+  id: 3dff5a27aa1f55b1
+  prefix: broker
+  category: real-estate
+  template_query: Who is the best {broker_type} broker in {area}
+  substitutions:
+    broker_type: home insurance
+    area: Brooklyn
+  created_at: '2026-06-04T20:48:02.996519+00:00'

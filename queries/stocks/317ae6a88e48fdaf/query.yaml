@@ -1,0 +1,9 @@
+query: What is the best insurance stock to invest in?
+metadata:
+  id: 317ae6a88e48fdaf
+  prefix: stocks
+  category: finance
+  template_query: What is the best {type} stock to invest in?
+  substitutions:
+    type: insurance
+  created_at: '2026-06-04T20:48:02.960341+00:00'

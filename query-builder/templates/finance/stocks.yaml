@@ -1,0 +1,3 @@
+Query: "What is the best {type} stock to invest in?"
+Subs:
+  type: ["tech", "growth", "value", "momentum", "low-volatility", "dividend", "healthcare", "insurance"]

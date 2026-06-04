@@ -1,0 +1,9 @@
+query: What is the best momentum stock to invest in?
+metadata:
+  id: 9e88c349460fc124
+  prefix: stocks
+  category: finance
+  template_query: What is the best {type} stock to invest in?
+  substitutions:
+    type: momentum
+  created_at: '2026-06-04T20:48:02.957814+00:00'

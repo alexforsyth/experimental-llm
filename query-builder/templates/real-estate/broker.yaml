@@ -1,0 +1,4 @@
+Query: "Who is the best {broker_type} broker in {area}"
+Subs:
+  broker_type: ["real estate", "car", "mortgage", "home insurance", "commericial real estate", "residential real estate", "condo or townhome"]
+  area: ["New York", "Brooklyn", "Manhattan", "Lower Manhattan", "Queens", "Los Angeles", "Chicago", "Houston", "Philly"]
