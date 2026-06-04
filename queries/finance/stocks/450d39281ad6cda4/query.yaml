@@ -1,0 +1,9 @@
+query: What is the best dividend stock to invest in?
+metadata:
+  id: 450d39281ad6cda4
+  prefix: stocks
+  category: finance
+  template_query: What is the best {type} stock to invest in?
+  substitutions:
+    type: dividend
+  created_at: '2026-06-04T20:50:04.100736+00:00'

@@ -1,0 +1,10 @@
+query: Who is the best condo or townhome broker in Houston
+metadata:
+  id: 08428e88e04dde65
+  prefix: broker
+  category: real-estate
+  template_query: Who is the best {broker_type} broker in {area}
+  substitutions:
+    broker_type: condo or townhome
+    area: Houston
+  created_at: '2026-06-04T20:50:04.171597+00:00'

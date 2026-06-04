@@ -18,8 +18,13 @@ def _utcnow_iso() -> str:
 
 
 def query_path(query: ConstructedQuery, out_dir: str | Path) -> Path:
-    """Return the path a query would be written to (without writing it)."""
-    return Path(out_dir) / query.prefix / query.id / QUERY_FILENAME
+    """Return the path a query would be written to (without writing it).
+
+    The layout mirrors the template's location: ``<out_dir>/<category>/<prefix>/
+    <id>/query.yaml`` (e.g. a ``finance/stocks.yaml`` template writes under
+    ``<out_dir>/finance/stocks/``).
+    """
+    return Path(out_dir) / query.category / query.prefix / query.id / QUERY_FILENAME
 
 
 def write(

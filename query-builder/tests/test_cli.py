@@ -27,6 +27,7 @@ def test_build_single_file_writes_queries(tmp_path, capsys):
     written = list(out.rglob("query.yaml"))
     assert len(written) == 6
     assert all(p.parent.parent.name == "broker" for p in written)
+    assert all(p.parent.parent.parent.name == "real-estate" for p in written)
     assert "6" in capsys.readouterr().out
 
 
@@ -43,8 +44,8 @@ def test_build_directory_builds_all_templates(tmp_path):
     code = main(["build", str(tmp_path / "templates"), "--out", str(out)])
 
     assert code == 0
-    assert len(list((out / "broker").rglob("query.yaml"))) == 6
-    assert len(list((out / "stocks").rglob("query.yaml"))) == 2
+    assert len(list((out / "real-estate" / "broker").rglob("query.yaml"))) == 6
+    assert len(list((out / "finance" / "stocks").rglob("query.yaml"))) == 2
 
 
 def test_dry_run_writes_nothing(tmp_path, capsys):

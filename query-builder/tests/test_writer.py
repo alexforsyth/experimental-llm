@@ -18,7 +18,7 @@ def make_query():
 def test_write_creates_expected_path(tmp_path):
     cq = make_query()
     path = write(cq, tmp_path, now=lambda: "2026-06-04T00:00:00+00:00")
-    assert path == tmp_path / "broker" / "abc123" / "query.yaml"
+    assert path == tmp_path / "real-estate" / "broker" / "abc123" / "query.yaml"
     assert path.is_file()
 
 
