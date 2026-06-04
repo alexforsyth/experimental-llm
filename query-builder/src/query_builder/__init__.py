@@ -13,7 +13,7 @@ from .builder import ConstructedQuery, build
 from .cli import build_paths, main
 from .ids import query_id
 from .template import Template, TemplateError
-from .writer import query_path, write
+from .writer import query_dirname, query_path, write
 
 __all__ = [
     "Template",
@@ -22,6 +22,7 @@ __all__ = [
     "build",
     "write",
     "query_path",
+    "query_dirname",
     "query_id",
     "build_paths",
     "main",

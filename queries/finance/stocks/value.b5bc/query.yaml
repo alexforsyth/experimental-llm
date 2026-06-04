@@ -1,0 +1,9 @@
+query: What is the best value stock to invest in?
+metadata:
+  id: b5bcefb66dd14a67
+  prefix: stocks
+  category: finance
+  template_query: What is the best {type} stock to invest in?
+  substitutions:
+    type: value
+  created_at: '2026-06-04T20:54:58.231619+00:00'

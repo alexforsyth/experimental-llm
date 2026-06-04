@@ -1,0 +1,10 @@
+query: Who is the best residential real estate broker in Houston
+metadata:
+  id: 670e9c55e14d1239
+  prefix: broker
+  category: real-estate
+  template_query: Who is the best {broker_type} broker in {area}
+  substitutions:
+    broker_type: residential real estate
+    area: Houston
+  created_at: '2026-06-04T20:54:58.301810+00:00'

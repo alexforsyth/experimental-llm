@@ -1,0 +1,10 @@
+query: Who is the best car broker in New York
+metadata:
+  id: 72e48b33225e2d89
+  prefix: broker
+  category: real-estate
+  template_query: Who is the best {broker_type} broker in {area}
+  substitutions:
+    broker_type: car
+    area: New York
+  created_at: '2026-06-04T20:54:58.241915+00:00'

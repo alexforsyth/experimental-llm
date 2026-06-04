@@ -1,0 +1,10 @@
+query: Who is the best mortgage broker in Los Angeles
+metadata:
+  id: e40e0277d41fb407
+  prefix: broker
+  category: real-estate
+  template_query: Who is the best {broker_type} broker in {area}
+  substitutions:
+    broker_type: mortgage
+    area: Los Angeles
+  created_at: '2026-06-04T20:54:58.259039+00:00'

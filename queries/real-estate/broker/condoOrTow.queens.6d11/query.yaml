@@ -1,0 +1,10 @@
+query: Who is the best condo or townhome broker in Queens
+metadata:
+  id: 6d111440020657c4
+  prefix: broker
+  category: real-estate
+  template_query: Who is the best {broker_type} broker in {area}
+  substitutions:
+    broker_type: condo or townhome
+    area: Queens
+  created_at: '2026-06-04T20:54:58.306970+00:00'

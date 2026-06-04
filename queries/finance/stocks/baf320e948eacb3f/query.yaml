@@ -1,9 +1,0 @@
-query: What is the best tech stock to invest in?
-metadata:
-  id: baf320e948eacb3f
-  prefix: stocks
-  category: finance
-  template_query: What is the best {type} stock to invest in?
-  substitutions:
-    type: tech
-  created_at: '2026-06-04T20:50:04.094370+00:00'
